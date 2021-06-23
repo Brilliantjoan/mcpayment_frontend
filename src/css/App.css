@@ -1,0 +1,92 @@
+.background-gray{
+  background-color: gray;
+}
+
+.outer-container{
+  margin: 50px 50px 10px 50px;
+  border-radius: 30px;
+  height: 85vh
+}
+
+.inner-container{
+  background-color: #fff;
+  margin: 30px 50px 50px 50px;
+  padding: 30px 30px 30px 30px;
+  border: 1px solid white;
+  border-radius: 5px;
+  border-top: 3px solid #d2d6de;
+}
+
+.margin-h1{
+  margin-block-start: 0 !important;
+}
+
+.align-center{
+  text-align: center;
+}
+
+table{
+  border-spacing: 0;
+  width: 100%;
+  text-align: center;
+  border-collapse: separate !important;
+  vertical-align: bottom;
+}
+
+th, td{
+  font-size: 14px;
+  border: 1px solid #f4f4f4;
+  text-align: left;
+  padding: 8px;
+}
+
+th{
+  border-bottom-width: 2px;
+  font-size: 14px;
+  /* background-color: #f5f5f5; */
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+td {
+  width: 10px;
+}
+
+td + td {
+  width: 30px;
+}
+
+td + td + td {
+  width: 100px;
+}
+
+td + td + td + td{
+  width: 60px;
+}
+
+td + td + td + td + td{
+  width: 60px;
+}
+
+td + td + td + td + td + td {
+  width: 150px;
+}
+
+td + td + td + td + td + td {
+  width: 40px;
+}
+
+.btn-s {
+  padding: 8px 15px;
+  font-size: 10px;
+  border-radius: 5px;
+}
+
+.btn-delete {
+  background-color: rgb(221, 2, 2);
+  color: #fff;
+  border: 0 none;
+  font-weight: 600;
+}

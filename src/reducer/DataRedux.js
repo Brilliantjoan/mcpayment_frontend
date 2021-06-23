@@ -3,7 +3,9 @@ import { createReducer, createActions } from 'reduxsauce'
 // Types and Action Creators
 const { Types, Creators } = createActions({
   dataRequest: ['payload'],
-  dataSuccess: ['data']
+  dataSuccess: ['data'],
+  deleteRequest: ['payload'],
+  deleteSuccess: ['data']
 })
 
 export const DataTypes = Types
@@ -12,7 +14,8 @@ export default Creators
 // Initial State
 const INITIAL_STATE = {
   data: null,
-  fetching: false
+  fetching: false,
+  deleteFetch: false
 }
 
 export const dataRequest = (state = INITIAL_STATE) => {

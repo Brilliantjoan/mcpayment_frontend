@@ -30,7 +30,7 @@ class Home extends Component {
   }
 
   onDeleteClick = (id) => {
-    this.props.requestDelete(id)
+    this.props.deleteRequest(id)
     window.location.reload()
   }
 

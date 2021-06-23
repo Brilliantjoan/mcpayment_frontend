@@ -3,7 +3,7 @@ import { call, put, takeLatest } from 'redux-saga/effects'
 import DataActions, { DataTypes } from '../reducer/DataRedux'
 
 import {
-  fetchAllData
+  fetchAllData, fetchDeleteData
 } from './getApi'
 
 function * getAllData (action) {
@@ -15,6 +15,15 @@ function * getAllData (action) {
   }
 }
 
+function * deleteData (action) {
+  try {
+    yield call(fetchDeleteData, action)
+  } catch (e) {
+    console.log(e)
+  }
+}
+
 export default function * sagas () {
   yield takeLatest(DataTypes.DATA_REQUEST, getAllData)
+  yield takeLatest(DataTypes.DELETE_REQUEST, deleteData)
 }

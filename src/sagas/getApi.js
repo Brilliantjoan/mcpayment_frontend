@@ -13,3 +13,17 @@ export const fetchAllData = async action => {
     console.log(e)
   }
 }
+
+export const fetchDeleteData = async action => {
+  try {
+    const api = `${baseApi}data/delete-data`
+    const body = {
+      data: {
+        id: action.payload
+      }
+    }
+    axios.delete(api, body)
+  } catch (e) {
+    console.log(e)
+  }
+}

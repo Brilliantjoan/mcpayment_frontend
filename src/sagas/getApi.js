@@ -27,3 +27,20 @@ export const fetchDeleteData = async action => {
     console.log(e)
   }
 }
+
+export const fetchSubmitData = async action => {
+  try {
+    console.log('action', action)
+    const api = `${baseApi}data/insert-data`
+    const body = {
+      title: action.payload.title,
+      total: action.payload.total,
+      type: action.payload.type
+    }
+    const response = await axios.post(api, body)
+    const res = await response.data.data
+    return res
+  } catch (e) {
+    console.log(e)
+  }
+}

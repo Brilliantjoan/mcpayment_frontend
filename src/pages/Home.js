@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import moment from 'moment'
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 
 import DataActions from '../reducer/DataRedux'
 
@@ -36,13 +37,17 @@ class Home extends Component {
 
   render () {
     const { data } = this.state
-    console.log('data', data)
     return (
       <div className='outer-container'>
         <span>
           <h1 className='margin-h1 align-center'>PAYMENT HISTORY</h1>
         </span>
         <div className='inner-container'>
+            <Link to='/add-new' style={{ textDecoration: 'none' }}>
+                <div className='btn-add-new btn-m'>
+                    + Add New
+                </div>
+            </Link>
           <div>
             <table>
               <thead>
@@ -66,9 +71,9 @@ class Home extends Component {
                           <td>{row.title}</td>
                           <td>Rp. {row.total}</td>
                           <td>Rp. {row.balance}</td>
-                          <td>{moment(row.deliver_date).format('YYYY-MM-DD HH:mm:ss')}</td>
+                          <td>{moment(row.deliver_date).format('YYYY-MM-DD')}</td>
                           <td>
-                            <button className='btn-delete btn-s' onClick={() => this.onDeleteClick(row.id)}>DELETE</button>
+                            <div className='btn-delete btn-s' onClick={() => this.onDeleteClick(row.id)}>DELETE</div>
                           </td>
                         </tr>
                       )

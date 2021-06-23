@@ -85,9 +85,91 @@ td + td + td + td + td + td {
   cursor: pointer;
 }
 
+.btn-m {
+  padding: 8px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .btn-delete {
   background-color: rgb(221, 2, 2);
+  width: 40px;
   color: #fff;
   border: 0 none;
   font-weight: 600;
+}
+
+.btn-add-new {
+  float: left;
+  background-color: gray;
+  margin-bottom: 20px;
+  width: 80px;
+  color: #fff;
+  border: 0 none;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-submit {
+  background-color: gray;
+  margin-bottom: 20px;
+  width: 90%;
+  color: #fff;
+  border: 0 none;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-disable {
+  padding: 8px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: not-allowed;
+  background-color: gray;
+  margin-bottom: 20px;
+  width: 90%;
+  color: #fff;
+  border: 0 none;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+}
+
+.form-outer-container{
+  background-color: white;
+  margin: 5% 30% 1% 30%;
+  padding: 25px 20px 30px 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.padding-bottom-m {
+  padding-bottom: 20px !important;
+}
+
+.padding-top-xxs {
+  padding-top: 5px !important;
+}
+
+.padding-top-xxl {
+  padding-top: 60px !important;
+}
+
+.margin-left-xxs {
+  margin-left: 5px !important;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.input {
+  width: 90%;
+  height: 30px;
+  color: #555761;
+  padding: 5px 10px;
+  border: 1px solid #aeb4bb;
+  border-radius: 3px;
 }

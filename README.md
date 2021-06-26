@@ -7,7 +7,7 @@ lihat adalah konsep, logic, kerapian dan pemahaman
 *. Sertakan Readme untuk soal aplikasi.
 *. Jika ada pertanyaan, silakan reply all email dari mcpayment
 *. Gunakan penamaan variable yang baik dan benar, ikuti konsep SOLID adalah nilai plus
-1. logic
+1. logic (di repo backend)
 A. Two Sums
 Given an array of integers nums and an integer target, return indices of the two numbers
 such that they add up to target.
